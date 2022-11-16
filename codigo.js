@@ -6,7 +6,10 @@ function funcion(mensaje) {
 }
 
 function funcion2() {
+    setTimeout(function () {
   document.write(" prendemos la cafetera");
+  mensaje();
+    },3000);
 }
 
 function mostrar() {
