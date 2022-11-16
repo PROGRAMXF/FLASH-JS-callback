@@ -1,12 +1,17 @@
 function funcion(mensaje){
     setTimeout(function(){
-        console.log('Colocar el cafe');
+        document.write('Colocamos el café...luego...');
         mensaje();
     }, 1000);
 }
 
 function funcion2(){
-    console.log('Prender la cafetera')
+    document.write(' prendemos la cafetera')
 }
 
-funcion(funcion2);
+const cambio = funcion(funcion2);
+
+
+function mostrar(){
+    document.write(cambio);
+}
